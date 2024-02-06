@@ -1,0 +1,20 @@
+<div class="header" id="header">
+    <a href="index.html">
+        <!-- device width 850px or smaller load small logo, bigger than 850px load big logo-->
+
+        <picture>
+            <source srcset="img/logo_small.png" media="(max-width: 850px)" width="30%">
+            <source srcset="img/logo.png" media="(min-width: 850px)">      
+            <img src="logo.png" alt="logo Kochwelt">
+        </picture>
+    </a>
+    <div class="nav_container dropdown">
+        <img src="img/icons/menu_btn_green.svg" onclick="myFunction()" class="dropbtn">
+        <nav id="myDropdown"          class="dropdown-content show">
+            <a class="nav-link" href="index.html">Start</a>
+            <a class="nav-link" href="recipe_of_day.html">Rezept des Tages</a>
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+            <a class="nav-link" href="impressum.html#imp">Impressum</a>
+        </nav>
+    </div>
+</div>

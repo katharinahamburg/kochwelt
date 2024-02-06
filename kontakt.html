@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+
+        <link rel="icon" href="img/logo_small.png">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- js includes footer and header -->
+        <script src="include_html_templates.js"></script>
+
+        <!-- Funktion dropdown_menu -->
+        <script src="dropdown_menu.js"></script>
+    </head>
+
+
+    <body onload="includeHTML()">
+        <div w3-include-html="templates/header.html"></div>
+        <div class="contact">
+
+            <!-- contact text -->
+            <div class="text">
+                <div class="headline">
+                    <h2 class="text-headline">Sie haben Fragen oder Anregungen?</h2>
+                </div>
+                
+                <span>Kontaktieren Sie uns gerne über das Formular.<br>
+                    <br>Wir freuen uns auf Ihre Nachricht.
+                </span>
+            </div>
+
+            <!-- formular -->
+            <form action="send_mail.php" method="POST">
+                <h2 class="contact-headline">Kontakt</h2>
+                <input class="contact-text"  name="name" placeholder="Dein Name" required="required">
+
+                <input class="contact-text" name="email" placeholder="Dein E-Mail Adresse" type="email" required="required">
+
+                <input class="contact-text" name="reference" placeholder="Betreff" type="reference" name="reference" id="reference">
+                <textarea name="message" required="required" placeholder="Deine Nachricht an uns" name="" id="" cols="30" rows="10" required="required"></textarea>
+                <button class="btn-contact btn" type="submit">Mail senden</button>
+            </form>
+        </div>
+        
+        <!-- footer -->
+        <div w3-include-html="templates/footer.html"></div>
+        
+    </body>
+
+</html>
+

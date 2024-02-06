@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lasagne</title>
+		
+		<link rel="icon" href="img/logo_small.png">
+
+		<link rel="stylesheet" href="styles.css">
+
+		
+		<!-- javascript -->
+		<!-- Einbindung html templates -->
+		<script src="include_html_templates.js"></script>
+
+		<!-- Funktion dropdown_menu -->
+		<script src="dropdown_menu.js"></script>
+		<script src="rechner.js"></script>
+
+
+	</head>
+	<body onload="includeHTML()">
+		<header>
+		<div w3-include-html="templates/header.html"></div>
+		</header>
+
+		<main>
+
+			<!-- recipe teaser -->
+			<section class="teaser">
+				<h1>Lasagne</h1>
+				<picture>
+					<img src="img/lasagne.jpg" alt="Lasagne">
+				</picture>
+				<div class="how_wrapper">
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>30 Min.</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/brain-solid.svg" alt="Gehirn">
+						<p>normal</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/calendar-alt-regular.svg" alt="Kalender">
+						<p>31.03.2023</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- igredients section -->
+			<section class="igredients_recipe">
+				<div class="ingredients_wrapper">
+					<div id="list" class="ingredients_line">
+						<p>Zutaten für</p>
+						<input id="getAmount" type="number" min="1" placeholder="1" required>
+						<button type="button"  onclick="lasagne()" class="btn">Portionen</button>
+					</div>
+					<div class="ingredients_line"><span id="z0">125</span> g gemischtes Hackfleisch</div>
+					<div class="ingredients_line"><span id="z1">75</span> g Lasagneplatte(n)</div>
+					<div class="ingredients_line"><span id="z2">0.25</span> Dose Tomaten</div>
+					<div class="ingredients_line"><span id="z3">0.125</span> Liter Milch</div>
+					<div class="ingredients_line"><span id="z4">7.5</span> g Butter</div>
+					<div class="ingredients_line"><span id="z5">10</span> g Mehl</div>
+					<div class="ingredients_line"><span id="z6">0.25</span> EL Tomatenmark</div>
+					<div class="ingredients_line"><span id="z7">0.25</span> Zwiebel(n)</div>
+					<div class="ingredients_line"><span id="z8">0.5</span> Knoblauchzehe(n)</div>
+					<div class="ingredients_line"><span id="z9">0.25</span> Bund Petersilie oder TK</div>
+					<div class="ingredients_line">etwas Rotwein</div>
+					<div class="ingredients_line">Salz und Pfeffer</div>
+					<div class="ingredients_line">Muskat</div>
+					<div class="ingredients_line">Zitronensaft</div>
+					<div class="ingredients_line">n.B. Käse, gerieben</div>
+					<div class="ingredients_line">Butterflöckchen</div>
+				</div>
+			</section>
+
+			<!-- how to cook section -->
+			<section class="cooking">
+				<h2>Zubereitung</h2>
+				<div class="how_wrapper">
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>ca. 30 Minuten</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>Gesamtzeit ca. 1 Stunde 40 Minuten Minuten</p>
+					</div>
+				</div>
+				<p class="cooking_text">
+					Ragú Bolognese:
+					In einem Topf das Olivenöl erhitzen, das Hackfleisch darin rundherum anbraten und die gehackten Zwiebeln und die gehackte Petersilie dazugeben. Knoblauch in feinen Scheiben und Tomatenmark dazu rühren und mitbraten. Mit den Dosentomaten aufgießen, salzen und pfeffern. Rotwein nach Belieben beifügen. Das Ragú mindestens eine halbe Stunde lang bei geöffnetem Topf einkochen lassen.<br><br>
+					
+					Béchamelsauce:
+					Butter in einem kleinen Topf schmelzen und das Mehl mit dem Schneebesen unterrühren und hellgelb anschwitzen. Die Milch dazugießen und die Sauce glatt rühren. Wer zu langsam gerührt hat und Klümpchen in der Sauce findet, kann die Sauce durch ein feines Haarsieb passieren und dann weiterkochen lassen. Die Sauce sollte fast eine halbe Stunde lang auf kleiner Flamme köcheln, damit sie den Mehlgeschmack verliert. Mit Salz, Pfeffer und Zitronensaft sowie etwas Muskatnuss abschmecken.<br><br>
+					
+					Zubereitung der Lasagne:
+					In einer gebutterten, feuerfesten Form etwas Ragú Bolognese verteilen, eine Schicht Lasagneplatten darauf legen, die Nudelschicht wieder mit Ragú und dann mit einer Schicht Béchamel bedecken.
+					Anschließend wieder eine Schicht Nudeln, Ragú und Béchamel. So Schicht für Schicht die Form füllen.
+					Die letzte Schicht sollte die Béchamelsauce bilden. Dick mit geriebenem Käse bestreuen und Butterflöckchen darauf setzen.<br><br>
+					
+					Die Lasagne im heißen Backofen bei 180 °C Umluft ca. 30 - 40 Minuten backen, bis die Kruste goldbraun ist.
+				</p>
+			</section>
+
+			<!-- person section -->
+			<section class="person">
+				<h3>Rezept erstellt von</h3>
+				<div class="person_wrapper">
+					<picture>
+						<img src="img/martin.png" alt="Foto von Martin" class="no_hover_scale">
+					</picture>
+					<p>Martin</p>
+				</div>
+			</section>			
+
+		</main>
+		
+		<!-- footer -->
+			<div w3-include-html="templates/footer.html"></div>
+
+	</body>
+</html>

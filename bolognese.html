@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Spaghetti-Bolognese</title>
+
+		<link rel="icon" href="img/logo_small.png">
+
+		<link rel="stylesheet" href="styles.css">
+
+
+		<!-- javascript -->
+		<!-- Einbindung html templates -->
+		<script src="include_html_templates.js"></script>
+
+	<!-- Funktion dropdown_menu -->
+	<script src="dropdown_menu.js"></script>
+	<script src="rechner.js"></script>
+
+	</head>
+
+	<body onload="includeHTML()">
+		<header>
+			<div w3-include-html="templates/header.html"></div>
+		</header>
+
+		<main>
+
+			<!-- rezept teaser -->
+			<section class="teaser">
+				<h1>Spaghetti-Bolognese</h1>
+				<picture>
+					<img src="img/spaghetti.jpg" alt="Lasagne">
+				</picture>
+				<div class="how_wrapper">
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>30 Min.</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/brain-solid.svg" alt="Gehirn">
+						<p>normal</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/calendar-alt-regular.svg" alt="Kalender">
+						<p>31.03.2023</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- igredients -->
+			<section class="igredients_recipe">
+				<div class="ingredients_wrapper">
+					<div id="list" class="ingredients_line">
+						<p>Zutaten für</p>
+						<input id="getAmount" type="number" min="1" placeholder="1" required>
+						<button type="button"  onclick="bolognese()" class="btn">Portionen</button>
+					</div>
+					<div class="ingredients_line"><span id="z0">0.25</span> Zwiebel(n)</div>
+					<div class="ingredients_line"><span></span> Knoblauch</div>
+					<div class="ingredients_line"><span id="z1">50</span> g Möhre(n)</div>
+					<div class="ingredients_line"><span id="z2">50</span> g Staudensellerie</div>
+					<div class="ingredients_line"><span id="z3">125</span> g Spaghetti</div>
+					<div class="ingredients_line"><span id="z4">125</span> g Rinderhackfleisch</div>
+					<div class="ingredients_line"><span id="z5">125</span>ml Tomaten, passierte</div>
+					<div class="ingredients_line"><span id="z6">0.25</span> Liter Gemüsebrühe</div>
+					<div class="ingredients_line"><span id="z7">0.25</span> Prise(n) Salz</div>
+					<div class="ingredients_line">Salz und Pfeffer</div>
+					<div class="ingredients_line">n. B. Tomatenmark</div>
+					<div class="ingredients_line">n. B. Pfeffer</div>
+					<div class="ingredients_line">n.B. Cayennepfeffer</div>
+				</div>
+			</section>
+
+			<!-- how to cook -->
+			<section class="cooking">
+				<h2>Zubereitung</h2>
+				<div class="how_wrapper">
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>ca. 30 Minuten</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>Gesamtzeit ca. 3 Stunde 30 Minuten</p>
+					</div>
+				</div>
+				<p class="cooking_text">
+					Spaghetti-Bolognese:<br><br>
+					Die Zwiebel und die Knoblauchzehe schälen und klein hacken.
+					Möhren schälen und würfeln, den Sellerie ebenfalls kleinschneiden.<br><br>
+					Rinderhackfleisch ohne Öl in einem großen Topf anbraten und die Zwiebel und den Knoblauch hinzugeben.<br>
+					<br>
+					Möhren und Sellerie nach einigen Minuten ebenfalls braten. Tomatenmark nach Belieben dazugeben.<br>
+					<br>
+					Passierte Tomaten in den Topf gießen und 1/3 der Brühe dazugeben. Einmal aufkochen lassen ,danach die
+					Hitze reduzieren und die Brühe nachgießen.<br>
+					<br>
+					Die Prozedur „Brühe nachgießen“ gerne über 2 - 3 Stunden hinweg durchführen. Dadurch wird es
+					geschmacklich besonders lecker.<br>
+					<br>
+					Die Nudeln nach Packungsanweisung in Salzwasser kochen.<br>
+					Nachdem die Nudeln fertig und abgegossen sind, die Bolognese nach Belieben mit Pfeffer und
+					Cayennepfeffer würzen
+				</p>
+			</section>
+
+			<!-- person section -->
+			<section class="person">
+				<h3>Rezept erstellt von</h3>
+				<div class="person_wrapper">
+					<picture>
+						<img src="img/ben.jpeg" alt="Foto von Benjamin" class="no_hover_scale person_portrait_img">
+					</picture>
+					<p>Benjamin</p>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- footer -->
+			<div w3-include-html="templates/footer.html"></div>
+
+	</body>
+</html>

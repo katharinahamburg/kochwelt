@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topfenknödel</title>
+
+    <link rel="icon" href="img/logo_small.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- javascript -->
+    <!-- Einbindung html templates -->
+    <script src="include_html_templates.js"></script>
+
+    <!-- Funktion dropdown_menu -->
+    <script src="dropdown_menu.js"></script>
+
+    <script src="rechner.js"></script>
+
+
+  </head>
+  <body onload="includeHTML()">
+    <header>
+      <div w3-include-html="templates/header.html"></div>
+    </header>
+
+    <main>
+
+      <!-- teaser section -->
+      <section class="teaser">
+        <h1>Topfenknödel</h1>
+        <picture>
+          <img src="img/knodel.jpg" alt="Knödel" />
+        </picture>
+        <div class="how_wrapper">
+          <div class="how_container">
+            <img src="img/icons/clock-regular.svg" alt="Uhr" />
+            <p>15 Min.</p>
+          </div>
+          <div class="how_container">
+            <img src="img/icons/brain-solid.svg" alt="Gehirn" />
+            <p>simpel</p>
+          </div>
+          <div class="how_container">
+            <img src="img/icons/calendar-alt-regular.svg" alt="Kalender" />
+            <p>28.09.1989</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- igredients section -->
+      <section class="igredients_recipe">
+        <div class="ingredients_wrapper">
+          <div id="list" class="ingredients_line">
+            <p>Zutaten für</p>
+            <input id="getAmount" type="number" min="1" placeholder="1" required>
+						<button type="button"  onclick="knoedel()" class="btn">Portionen</button>
+          </div>
+          <div class="ingredients_line"><span id="z0">50</span> g Quark (Topfen)</div>
+          <div class="ingredients_line"><span id="z1">7.5</span> g Butter, weiche</div>
+          <div class="ingredients_line"><span id="z2">0.25</span> Zitrone, geriebene Schale</div>
+          <div class="ingredients_line"><span id="z3">0.25</span> Ei</div>
+          <div class="ingredients_line"><span id="z4">20</span> g Semmelbrösel</div>
+          <div class="ingredients_line"><span></span>Salz</div>
+          <div class="ingredients_line"><span id="z5">25</span> g Semmelbrösel</div>
+          <div class="ingredients_line"><span id="z6">12.5</span> g Butter</div>
+          <div class="ingredients_line">Zucker und Zimt</div>
+        </div>
+      </section>
+
+      <!-- how cooking section -->
+      <section class="cooking">
+        <h2>Zubereitung</h2>
+        <div class="how_wrapper">
+          <div class="how_container">
+            <img src="img/icons/clock-regular.svg" alt="Uhr" />
+            <p>ca. 20 Minuten</p>
+          </div>
+          <div class="how_container">
+            <img src="img/icons/clock-regular.svg" alt="Uhr" />
+            <p>Gesamtzeit ca. 30 Minuten</p>
+          </div>
+        </div>
+        <p class="cooking_text">
+          Topfen in einem Geschirrtuch ausdrücken. Butter, Salz und
+          Zitronenschale schaumig rühren. Nun unter den gut ausgedrückten
+          Topfen das Ei vorsichtig unterrühren. Nach dem Einrühren der
+          Semmelbrösel den Teig für ca. eine halbe Stunde ruhen lassen.
+		      <br><br>
+		      Knödel formen und in leicht köchelndem und gesalzenem Wasser
+          ca. 10 min ziehen lassen. In der Zwischenzeit Zucker und Butter in
+          der Pfanne schmelzen und Semmelbrösel einrühren, unter ständigem
+          Rühren anrösten und mit Zimt abschmecken. Die fertigen Knödel
+          in den süßen Bröseln wenden und mit den Bröseln oder auf Früchten servieren.
+		      <br><br>Diese Knödel lassen sich lecker variieren. Man kann die
+          Knödel z.B. mit Marillen, Erdbeeren, Pflaumen füllen.
+        </p>
+      </section>
+
+      <!-- person section -->
+      <section class="person">
+        <h3>Rezept erstellt von</h3>
+        <div class="person_wrapper">
+          <picture>
+            <img src="img/kara.jpg" alt="Bild von Katharina" class="no_hover_scale">
+          </picture>
+          <p>Katharina</p>
+        </div>
+      </section>
+    </main>
+  
+    <!-- footer -->
+      <div w3-include-html="templates/footer.html"></div>
+  
+  </body>
+</html>
+
+
+
+<!--<div class="ingredients_line"><span id="z0">200</span>g Quark (Topfen)</div>
+<div class="ingredients_line"><span id="z1">30</span>g Butter, weiche</div>
+<div class="ingredients_line"><span id="z2">1</span> Zitrone, geriebene Schale</div>
+<div class="ingredients_line"><span id="z3">1</span> Ei</div>
+<div class="ingredients_line"><span id="z4">80</span>g Semmelbrösel</div>
+<div class="ingredients_line"><span></span>Salz</div>
+<div class="ingredients_line"><span id="z5">100</span>g Semmelbrösel</div>
+<div class="ingredients_line"><span id="z6">50</span>g Butter</div>
+<div class="ingredients_line">Zucker und Zimt</div>

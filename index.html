@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" href="img/logo_small.png">
+		<link rel="icon" href="/img/logo_small.png">
+		
+		<title>Kochwelt</title>
+
+		<link rel="stylesheet" href="styles.css">
+
+		
+		<!-- javascript -->
+		<!-- Einbindung html templates -->
+		<script src="include_html_templates.js"></script>
+
+		<!-- Funktion dropdown_menu -->
+		<script src="dropdown_menu.js"></script>
+
+		<!-- Cookie Bar -->
+		<!--script src="https://cloud.ccm19.de/app.js?apiKey=c20497d4102f5c828b6d0d11f7b5969319c68af07e77400d&amp;domain=6426f2c2ebe0f753ed0873b3" referrerpolicy="origin"></script>-->
+
+	</head>
+	<body onload="includeHTML()">
+		<header>
+		<div w3-include-html="templates/header.html"></div>
+		</header>
+
+		<!-- main -->
+		<main class="img_scale">
+			<h1 class="display_none">Kochwelt</h1>
+
+			<!-- teaser recipe -->
+			<section class="recipe_of_day">
+				<a href="recipe_of_day.html">
+						<img src="img/salad.jpg" alt="Salat"> 
+				</a>
+				<div class="recipe_description">
+						<div class="description_text">
+							<h2>Griechischer Salat</h2>
+							<p>Griechischer Salat ist eine köstliche und gesunde Mischung aus Tomaten, Gurken, Paprika, Zwiebeln, Feta-Käse und Oliven, gewürzt mit Olivenöl und Oregano. Er ist einfach zuzubereiten und perfekt als Beilage oder leichte Mahlzeit an heißen Tagen.</p>
+						</div>
+						<div class="btn_wrapper">
+								<a href="recipe_of_day.html" class="btn">Rezept öffnen</a>
+						</div>
+				</div>
+			</section>
+
+			<!-- recipe choice -->
+			<section class="recipe_choice">
+				<h2>Lust auf was Neues?</h2>
+				<div class="recipe_wrapper">
+					<a href="lasagne.html">
+						<picture>
+							<img src="img/lasagne.jpg" alt="Lasagne">
+						</picture>Lasagne
+					</a>
+					<a href="bolognese.html">
+						<picture>
+							<img src="img/spaghetti.jpg" alt="Spaghetti Bolognese">
+						</picture> Bolognese
+					</a>
+					<a href="knodel.html">
+						<picture>
+							<img src="img/knodel.jpg" alt="Salzburger Nockerl">
+						</picture>Topfenknödel
+					</a>
+				</div>
+			</section>
+
+			<!-- bottom article -->
+			<section class="bottom_article">
+				<h2>Pfanne vs. Wok - Was ist besser?</h2>
+				<div class="bottom_article_wrapper">
+					<p>Pfannen und Woks sind vielseitige Kochgeschirre. Pfannen sind flach und gut zum Braten. Woks haben hohe Ränder und sind ideal zum Rühren von Zutaten. Pfannen sind erschwinglicher und leichter, während Woks eine bessere Kontrolle bieten. Hochwertige Materialien sind in beiden Fällen wichtig.</p>
+					<picture>
+						<img src="img/wok.jpg" alt="Wok mit Gemüse">
+					</picture>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- footer -->
+			<div w3-include-html="templates/footer.html"></div>
+		
+	</body>
+</html>

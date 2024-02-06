@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+
+        <link rel="icon" href="img/logo_small.png">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- including header and footer -->
+        <script src="include_html_templates.js"></script>
+
+        <!-- Funktion dropdown_menu -->
+        <script src="dropdown_menu.js"></script>
+    </head>
+
+
+    <body onload="includeHTML()">
+        <div w3-include-html="templates/header.html"></div>
+        
+        <div class="success">
+            <h1 class="succes-text">Nachricht wurde gesendet!</h1>
+            <p class="success-top">Deine Nachricht ist bei uns angekommen und wir möchten uns für dein Vertrauen und deine
+                Mitteilung bedanken. Wir
+                werden so schnell wie möglich darauf antworten und dich auf dem Laufenden halten.</p>
+
+            <p class="succes-bottom">Dein Kochwelt Team</p>
+            <img src="img/logo.png" alt="logo">
+        </div>
+
+        <!-- footer -->
+        <div w3-include-html="templates/footer.html"></div>
+
+    </body>
+
+</html>

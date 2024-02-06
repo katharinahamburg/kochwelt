@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rezept des Tages</title>
+
+		<link rel="icon" href="img/logo_small.png">
+
+		<link rel="stylesheet" href="styles.css">
+
+		
+		<!-- javascript -->
+		<!-- Einbindung html templates -->
+		<script src="include_html_templates.js"></script>
+
+		<!-- Funktion dropdown_menu -->
+		<script src="dropdown_menu.js"></script>
+
+		<script src="rechner.js"></script>
+
+	</head>
+	<body onload="includeHTML()">
+		<header>
+			<div w3-include-html="templates/header.html"></div>
+		</header>
+
+		<main>
+			<!-- teaser -->
+			<section class="teaser">
+				<h1>Griechischer Salat</h1>
+				<picture>
+					<img src="img/salad.jpg" alt="Salat">
+				</picture>
+				<div class="how_wrapper">
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>15 Min.</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/brain-solid.svg" alt="Gehirn">
+						<p>simpel</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/calendar-alt-regular.svg" alt="Kalender">
+						<p>28.09.2020</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- igredients -->
+			<section class="igredients_recipe">
+				<div class="ingredients_wrapper">
+					<div id="list" class="ingredients_line">
+						<p>Zutaten für</p>
+						<input id="getAmount" type="number" min="1" placeholder="1" required>
+						<button type="button"  onclick="salat()" class="btn">Portionen</button>
+					</div>
+					<div class="ingredients_line"><span id="z0">0.25</span> Salatgurke(n)</div>
+					<div class="ingredients_line"><span id="z1">0.5</span> Paprikaschot(n), rot und grün</div>
+					<div class="ingredients_line"><span id="z2">125</span> g Tomate(n)</div>
+					<div class="ingredients_line"><span id="z3">0.5</span> Zwiebel(n)</div>
+					<div class="ingredients_line"><span id="z4">50</span> g Schafskäse(n)</div>
+					<div class="ingredients_line"><span id="z5">0.25</span> Glas Oliven, schwarz</div>
+					<div class="ingredients_line">Salz und Pfeffer</div>
+					<div class="ingredients_line"><span id="z6">0.25</span> Zitrone(n)</div>
+					<div class="ingredients_line"><span id="z7">31.25</span> ml Olivenöl</div>
+					<div class="ingredients_line">Oregano</div>
+				</div>
+			</section>
+
+			<!-- how to cook -->
+			<section class="cooking">
+				<h2>Zubereitung</h2>
+				<div class="how_wrapper">
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>ca. 15 Minuten</p>
+					</div>
+					<div class="how_container">
+						<img src="img/icons/clock-regular.svg" alt="Uhr">
+						<p>Gesamtzeit ca. 15 Minuten</p>
+					</div>
+				</div>
+				<p class="cooking_text">
+					Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben. Olivenöl. Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren und über den Salat gießen. Umrühren.
+				</p>
+			</section>
+
+			<!-- person -->
+			<section class="person">
+				<h3>Rezept erstellt von</h3>
+				<div class="person_wrapper">
+					<picture>
+						<img src="img/profile.png" alt="Foto von Junus" class="no_hover_scale">
+					</picture>
+					<p>Junus</p>
+				</div>
+			</section>			
+
+		</main>
+
+			<!-- footer -->
+			<div w3-include-html="templates/footer.html"></div>
+
+	</body>
+</html>
